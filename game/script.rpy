@@ -1,33 +1,53 @@
-﻿# The script of the game goes in this file.
+﻿label start:
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+    scene Roy_walking
 
-define e = Character("Eileen")
+    play music "background_music/piano_background.mp3"
 
+    "Сегодняшнее утро было на удивление приятным."
 
-# The game starts here.
+    "Несмотря на немного пасмурное, по осеннему хмурое небо, предрекающее дождь, я с удовольствием прогуливался по улице. Ветер путался в моих волосах, гонял по небу
+    листья клена, которые дети любят собирать для гербария."
 
-label start:
+    "Запахнув поплотнее любимую красную ветровку,доставшуюся от дедушки, я включил свой плеер."
+    
+    "В наушниках неизменно играла любимая музыка"
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    menu:
 
-    scene bg room
+        "*Рок*":
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+            "Недавно группа Kirvana выпустила новый альбом."
 
-    show eileen happy
+            play music "background_music/rock_music.mp3" volume 0.06
 
-    # These display lines of dialogue.
+        "*Хип-хоп*":
 
-    e "You've created a new Ren'Py game."
+            "Недавно Snoop Cat выпустил новый альбом."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+            play music "background_music/hip-hop_music.mp3" volume 0.06
 
-    # This ends the game.
+        "*Поп-музыка*":
+
+            "Недавно Майкл Брексон выпустил новый альбом."
+
+            play music "background_music/pop_music.mp3" volume 0.06
+
+    "Все звуки в миг стихли, сменяясь привычной мелодией.Я зашагал ей в такт, отбивая ритм пальцем по плееру."
+
+    "Сегодня - мой долгожданный выходной, поэтому в планах было только наслаждаться осенним утром Портленда."
+
+    "Редкие прохожие размеренно плыли мимо, пока я утопал в мыслях о том, что бы приготовить на ужин."
+    
+    "Наткнувшись взглядом на булочную, которая мне нравится не только за свежий хлеб, но и за приятного общительного продавца, я
+    решил зайти внутрь."
+
+    scene bakery
+
+    "С минуту подумав о том, что хочу взять, я остановился на привычном варианте - чесночный хлеб
+    и пару творожных ватрушек."
+
+    News "Сегодня в 9 часу произошла чудовищная авария в штате Буфорд - обнаружено трое
+    погибших, более 10 человек в тяжелом состоянии доставлены в реанимацию..."
 
     return
