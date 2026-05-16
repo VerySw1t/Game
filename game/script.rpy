@@ -1,6 +1,8 @@
 ﻿default favorite_music = ''
 
 label start:
+
+    jump episode_2
     
     scene black 
 
@@ -270,4 +272,7 @@ label start:
     "..."
 
     "Так я и оказался здесь. В месте, от которого я так старательно бежал - Буфорд."
+    
+    jump episode_2
+    
     return
